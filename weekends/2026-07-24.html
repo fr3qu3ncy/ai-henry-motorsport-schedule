@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Race Weekend — 24–26 July 2026</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background-color:#0d1117; font-family:'Segoe UI',Arial,Helvetica,sans-serif; color:#e6edf3; line-height:1.5; }
+  .page-wrapper { padding:20px; }
+  .container { max-width:720px; margin:0 auto; background-color:#161b22; border-radius:12px; overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,0.4); }
+  .header { background:linear-gradient(135deg,#1a1e2e,#0d1117); padding:24px 28px; border-bottom:3px solid #ff1801; }
+  .header h1 { font-size:28px; font-weight:700; color:#e6edf3; }
+  .header .subtitle { font-size:16px; color:#8b949e; margin-top:4px; }
+  .content { padding:20px 28px; }
+  .nav-link { display:inline-block; margin-bottom:16px; color:#58a6ff; text-decoration:none; font-size:16px; }
+  .nav-link:hover { text-decoration:underline; }
+  .day-block { margin-bottom:18px; }
+  .day-header { padding-bottom:8px; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .day-label { font-size:20px; font-weight:600; color:#e6edf3; }
+  .session-count { font-size:14px; color:#8b949e; background:#21262d; padding:2px 8px; border-radius:8px; }
+  .session-list { border-collapse:separate; border-spacing:0 3px; }
+  .session-header { background:#1c2128; display:flex; padding:6px 10px; }
+  .session-header span { font-size:14px; font-weight:600; color:#8b949e; }
+  .session-row { display:flex; padding:8px 10px; background:#0d1117; }
+  .f1-session { background:#1a1005; }
+  .col-time { font-size:16px; color:#58a6ff; font-weight:500; min-width:50px; white-space:nowrap; }
+  .col-session { font-size:16px; flex:1; }
+  .col-race { font-size:15px; color:#8b949e; text-align:right; max-width:180px; }
+  .dot { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:8px; vertical-align:middle; }
+  .overlap-alert { background:#2a1f00; border:1px solid #e3b341; border-radius:8px; padding:12px 14px; margin-bottom:18px; }
+  .overlap-title { color:#e3b341; font-size:16px; font-weight:600; }
+  .overlap-item { color:#d4a830; font-size:15px; margin:6px 0; }
+  .overlap-day { color:#d4a830; }
+  .overlap-warn { color:#e3b341; font-style:italic; }
+  .legend { background:#161b22; border:1px solid #21262d; border-radius:8px; padding:12px 14px; margin-top:16px; }
+  .legend-title { font-size:15px; font-weight:600; color:#e6edf3; margin-bottom:6px; }
+  .legend-item { display:inline-block; font-size:15px; color:#8b949e; margin-right:12px; }
+  .races-section { background:#161b22; border:1px solid #21262d; border-radius:8px; padding:12px 14px; margin-top:12px; }
+  .races-section h3 { font-size:16px; color:#e6edf3; margin-bottom:6px; }
+  .races-section ul { list-style:none; padding:0; }
+  .races-section li { font-size:15px; color:#8b949e; padding:2px 0; }
+  .footer { background:#0d1117; padding:16px 28px; text-align:center; border-top:1px solid #21262d; }
+  .footer span { font-size:14px; color:#484f58; }
+  @media (max-width: 600px) {
+    .container { width:100% !important; max-width:100% !important; }
+    .header { padding:16px !important; }
+    .content { padding:16px !important; }
+    .footer { padding:12px 16px !important; }
+    .col-race { display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="page-wrapper">
+<div class="container">
+<div class="header">
+  <h1>&#x1f3c1; Race Weekend — 24–26 July 2026</h1>
+  <div class="subtitle">19 sessions across 3 days</div>
+</div>
+<div class="content">
+  <a href="../index.html" class="nav-link">&#x2190; Back to all weekends</a>
+  <div class="day-block">
+  <div class="day-header">
+    <span class="day-label">Friday 24 July</span>
+    <span class="session-count">6 sessions</span>
+  </div>
+  <div class="session-list">
+    <div class="session-header">
+      <span class="col-time">Time</span>
+      <span class="col-session">Session</span>
+      <span class="col-race">Race</span>
+    </div>
+    <div class="session-row">
+      <span class="col-time">08:55</span>
+      <span class="col-session"><span class="dot" style="background:#58a6ff;"></span><span>F3 — Free Practice</span></span>
+      <span class="col-race">Hungaroring GP</span>
+    </div>
+    <div class="session-row">
+      <span class="col-time">10:05</span>
+      <span class="col-session"><span class="dot" style="background:#f9d423;"></span><span>F2 — Free Practice</span></span>
+      <span class="col-race">Hungaroring GP</span>
+    </div>
+    <div class="session-row f1-session">
+      <span class="col-time">12:30</span>
+      <span class="col-session"><span class="dot" style="background:#ff1801;"></span><span font-weight:600;>F1 — Free Practice 1</span></span>
+      <span class="col-race">Formula 1 AWS Hungarian Grand Prix 2026</span>
+    </div>
+    <div class="session-row">
+      <span class="col-time">14:00</span>
+      <span class="col-session"><span class="dot" style="background:#58a6ff;"></span><span>F3 — Qualifying</span></span>
+      <span class="col-race">Hungaroring GP</span>
+    </div>
+    <div class="session-row">
+      <span class="col-time">15:05</span>
+      <span class="col-session"><span class="dot" style="background:#f9d423;"></span><span>F2 — Qualifying</span></span>
+      <span class="col-race">Hungaroring GP</span>
+    </div>
+    <div class="session-row f1-session">
+      <span class="col-time">16:00</span>
+      <span class="col-session"><span class="dot" style="background:#ff1801;"></span><span font-weight:600;>F1 — Free Practice 2</span></span>
+      <span class="col-race">Formula 1 AWS Hungarian Grand Prix 2026</span>
+    </div>
+  </div>
+</div>
+<div class="day-block">
+  <div class="day-header">
+    <span class="day-label">Saturday 25 July</span>
+    <span class="session-count">7 sessions</span>
+  </div>
+  <div class="session-list">
+    <div class="session-header">
+      <span class="col-time">Time</span>
+      <span class="col-session">Session</span>
+      <span class="col-race">Race</span>
+    </div>
+    <div class="session-row">
+      <span class="col-time">09:05</span>
+      <span class="col-session"><span class="dot" style="background:#58a6ff;"></span><span>F3 — Sprint Race</span></span>
+      <span class="col-race">Hungaroring GP</span>
+    </div>
+    <div class="session-row">
+      <span class="col-time">10:25</span>
+      <span class="col-session"><span class="dot" style="background:#e36209;"></span><span>BTCC — Free Practice</span></span>
+      <span class="col-race">Thruxton</span>
+    </div>
+    <div class="session-row f1-session">
+      <span class="col-time">11:30</span>
+      <span class="col-session"><span class="dot" style="background:#ff1801;"></span><span font-weight:600;>F1 — Free Practice 3</span></span>
+      <span class="col-race">Formula 1 AWS Hungarian Grand Prix 2026</span>
+    </div>
+    <div class="session-row">
+      <span class="col-time">13:15</span>
+      <span class="col-session"><span class="dot" style="background:#f9d423;"></span><span>F2 — Sprint Race</span></span>
+      <span class="col-race">Hungaroring GP</span>
+    </div>
+    <div class="session-row">
+      <span class="col-time">14:00</span>
+      <span class="col-session"><span class="dot" style="background:#e36209;"></span><span>BTCC — Qualifying</span></span>
+      <span class="col-race">Thruxton</span>
+    </div>
+    <div class="session-row f1-session">
+      <span class="col-time">15:00</span>
+      <span class="col-session"><span class="dot" style="background:#ff1801;"></span><span font-weight:600;>F1 — Qualifying</span></span>
+      <span class="col-race">Formula 1 AWS Hungarian Grand Prix 2026</span>
+    </div>
+    <div class="session-row">
+      <span class="col-time">15:05</span>
+      <span class="col-session"><span class="dot" style="background:#e36209;"></span><span>BTCC — Qualifying Race</span></span>
+      <span class="col-race">Thruxton</span>
+    </div>
+  </div>
+</div>
+<div class="day-block">
+  <div class="day-header">
+    <span class="day-label">Sunday 26 July</span>
+    <span class="session-count">6 sessions</span>
+  </div>
+  <div class="session-list">
+    <div class="session-header">
+      <span class="col-time">Time</span>
+      <span class="col-session">Session</span>
+      <span class="col-race">Race</span>
+    </div>
+    <div class="session-row">
+      <span class="col-time">07:40</span>
+      <span class="col-session"><span class="dot" style="background:#58a6ff;"></span><span>F3 — Feature Race</span></span>
+      <span class="col-race">Hungaroring GP</span>
+    </div>
+    <div class="session-row">
+      <span class="col-time">10:25</span>
+      <span class="col-session"><span class="dot" style="background:#f9d423;"></span><span>F2 — Feature Race</span></span>
+      <span class="col-race">Hungaroring GP</span>
+    </div>
+    <div class="session-row">
+      <span class="col-time">11:45</span>
+      <span class="col-session"><span class="dot" style="background:#e36209;"></span><span>BTCC — Race</span></span>
+      <span class="col-race">Thruxton</span>
+    </div>
+    <div class="session-row f1-session">
+      <span class="col-time">14:00</span>
+      <span class="col-session"><span class="dot" style="background:#ff1801;"></span><span font-weight:600;>F1 — Race</span></span>
+      <span class="col-race">Formula 1 AWS Hungarian Grand Prix 2026</span>
+    </div>
+    <div class="session-row">
+      <span class="col-time">14:40</span>
+      <span class="col-session"><span class="dot" style="background:#e36209;"></span><span>BTCC — Race</span></span>
+      <span class="col-race">Thruxton</span>
+    </div>
+    <div class="session-row">
+      <span class="col-time">17:30</span>
+      <span class="col-session"><span class="dot" style="background:#e36209;"></span><span>BTCC — Race</span></span>
+      <span class="col-race">Thruxton</span>
+    </div>
+  </div>
+</div>
+
+  <div class="races-section">
+    <h3>Featured Races</h3>
+    <ul><li>BTCC: Thruxton</li><li>F1: Formula 1 AWS Hungarian Grand Prix 2026</li><li>F2: Hungaroring GP</li><li>F3: Hungaroring GP</li></ul>
+  </div>
+  <div class="legend">
+    <div class="legend-title">Legend</div>
+    <span class="legend-item"><span class="dot" style="background:#ff1801;"></span> F1</span>
+<span class="legend-item"><span class="dot" style="background:#f9d423;"></span> F2</span>
+<span class="legend-item"><span class="dot" style="background:#58a6ff;"></span> F3</span>
+<span class="legend-item"><span class="dot" style="background:#e36209;"></span> BTCC</span>
+
+    <div style="margin-top:8px; font-size:11px; color:#484f58;">All times BST</div>
+  </div>
+  <div class="overlap-alert">
+<span class="overlap-title">&#x26a0;&#xfe0f; Overlap Alert</span>
+<div class="overlap-item">
+<span class="overlap-day">Saturday 25 July</span><br>
+F1 Qualifying (15:00) <br>
+vs BTCC Qualifying Race (15:05)<br>
+<span class="overlap-warn">Pick one — they clash!</span>
+</div>
+</div>
+
+</div>
+<div class="footer">
+  <span>Generated by Henry &middot; Motorsport Schedule &middot; 20 July 2026</span>
+</div>
+</div>
+</div>
+</body>
+</html>
